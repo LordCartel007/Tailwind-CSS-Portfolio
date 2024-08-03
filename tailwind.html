@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Our nav bar -->
+    <nav class=" container-fluid bg-slate-600 mx-auto flex justify-between items-center px-5 PY-4 z-10 font-mono font-bold" id="HOME">
+        <h1 class="text-[40px] text-amber-400">KCEE</h1>
+      <!-- the fa-solid is a hamburger icon from font awesome at meduim screen it becomes hidden -->
+       <i class="fa-solid fa-bars md:hidden"></i>  
+        <Ul class="gap-4 hidden sm:flex  text-amber-400">
+          <li><a href="#HOME" class="hover:text-white ">HOME</a></li>
+          <li><a href="#SKILL" class="hover:text-white ">SKILL</a></li>
+          <li><a href="#PROJECT" class="hover:text-white ">PROJECTS</a></li>
+          <li><a href="#CONTACT" class="hover:text-white ">CONTACT</a></li>
+        </Ul>
+    </nav>
+        <!-- our hero section -->
+    <section class="hero">
+        <div style="background-image: url('./images/Portfolio\ laptop.jpg');
+         background-size: cover; background-position: center; height: 60vh;
+          width: 100%;">
+            <!-- Content goes here -->
+          <h1 class="text-cyan-600 font-bold  text-center pt-16  text-[20px] sm:text-[40px]
+           md:text-[50px]">
+            Hello , I Am Kcee , A Proffessional Web and Software Developer With High End Programming skills
+          </h1>
+        </div>
+    </section>
+
+
+
+    <section class="grid" id="SKILL">
+        <div class="mx-auto flex flex-col items-center px-5 bg-slate-600 pb-8">
+            <h1 class=" text-[40px]">SKILLS</h1>
+            <!-- it displays as block at small screen then it flex to horizontal at after small screen then set how many col it
+             does at screen size -->
+            <div class="grid grid-cols-1 gap-4  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-[100%]  text-amber-400" >
+              <div class="h-auto border rounded-lg flex flex-col hover:scale-[1.02] transition duration-200 text-center ">
+                <img src="./images/python-pics.jpg" class="h-auto w-full rounded-t-lg" alt="">
+                <p class=" text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Highly skilled in phython Programming</p>
+              </div>
+            
+              <div class="h-auto border rounded-lg flex flex-col hover:scale-[1.02] transition duration-200 text-center ">
+                <img src="./images/javascript.png" class="h-auto w-full rounded-t-lg" alt="">
+                <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">JSA, Certified Associate
+                     JavaScript Programmer certification
+                </p>
+              </div>
+              
+              <div class="h-auto border rounded-lg flex flex-col hover:scale-[1.02] transition duration-200 text-center ">
+                <img src="./images/c++ pics.jpg" class="h-auto w-full rounded-t-lg" alt="">
+                <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+                    W3 C++ Certification. ...
+                    CPA – C++ Certified Associate Programmer Certification. ...
+                    EDX Certificate in C++ Programming. .
+                </p>
+              </div>
+
+              <div class="h-auto border rounded-lg flex flex-col hover:scale-[1.02] transition duration-200 text-center ">
+                <img src="./images/seo pic.jpg" class="h-auto w-full rounded-t-lg" alt="">
+                <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Google Analytics Individual Qualification. ...
+                    SEO Fundamentals Certification.</p>
+              </div>
+
+              <div class="h-auto border rounded-lg flex flex-col hover:scale-[1.02] transition duration-200 text-center ">
+                <img src="./images/Responsive-Web-Design pic.png" class="h-auto w-full rounded-t-lg" alt="">
+                <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Responsive Wed Design Certification</p>
+              </div>
+
+              <div class="h-auto border rounded-lg flex flex-col hover:scale-[1.02] transition duration-200 text-center ">
+                <img src="./images/2021_12_backend-pic.jpg" class="h-auto w-full rounded-t-lg" alt="">
+                <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"> Back-End Developer Skills with A Meta Certificate </p>
+              </div>
+            </div>
+        </div>
+    </section>
+      <!-- section for our projects display -->
+    <section class="project" id="PROJECT">
+        <div class="mx-auto flex flex-col items-center px-5 mt-9 bg-slate-900 pb-8">
+            <h1 class=" text-[40px] text-amber-400">PROJECTS</h1>
+            <!-- it displays as block at small screen then it flex to horizontal at after small screen then how many col it
+             does at screen size -->
+            <div class="grid grid-cols-1 gap-4  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-[100%]  text-amber-400" >
+              <div class="h-auto border rounded-lg flex flex-col hover:scale-[1.02] transition duration-200 text-center ">
+                <img src="./images/weather app.jpg" class="h-auto w-full rounded-t-lg" alt="">
+                <h1 class=" text-[30px] text-sky-500">Weather Forecasting App</h1>
+                <p class=" text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl"> I created an application of science and 
+                    technology to predict the conditions of the atmosphere for a given location and time </p>
+              </div>
+
+              <div class="h-auto border rounded-lg flex flex-col hover:scale-[1.02] transition duration-200 text-center ">
+                <img src="./images/shopping site.jpg" class="h-auto w-full rounded-t-lg" alt="">
+                <h1 class=" text-[30px] text-sky-500">Ecommerce site</h1>
+                <p class=" text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl"> I created an online store where 
+                    customers can find products, browse offerings, and place purchases online. It facilitates the 
+                    transaction between a buyer and seller. </p>
+              </div>
+            
+              <div class="h-auto border rounded-lg flex flex-col hover:scale-[1.02] transition duration-200 text-center ">
+                <img src="./images/CHATTING APP.jpg" class="h-auto w-full rounded-t-lg" alt="">
+                <h1 class=" text-[30px] text-sky-500">Chatting App</h1>
+                <p class=" text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl"> Made a chatting app that can facilitate both
+                    normal call and video call </p>
+              </div>
+            
+              <div class="h-auto border rounded-lg flex flex-col hover:scale-[1.02] transition duration-200 text-center ">
+                <img src="./images/Barcode-Scanner-App-pic.jpeg" class="h-auto w-full rounded-t-lg" alt="">
+                <h1 class=" text-[30px] text-sky-500">Bar Code Scanner App</h1>
+                <p class=" text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl">Created a bar code scanner compartible on 
+                    all phone types </p>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+  <!-- our contact section -->
+    <div class="bg-gray-100 flex items-center justify-center mt-6 py-6 mb-16 " id="CONTACT">
+        <div class="w-full max-w-lg p-6 bg-white rounded-lg shadow-lg ">
+            <h1 class="text-2xl font-bold mb-6 text-center">Contact Us</h1>
+            <form action="#" method="POST">
+              <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required
+                  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              </div>
+        
+              <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required
+                  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              </div>
+        
+              <div class="mb-4">
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message" required
+                  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+              </div>
+        
+              <button type="submit"
+                class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Send
+              </button>
+            </form>
+       </div>
+    </div>
+       <!-- our footer section -->
+     <div class=" bg-slate-900 text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl py-2 ">
+         <p class="text-amber-400">copyright &COPY; All Rights Reserved KCEE 2024 .</p>
+          <!-- the boothstrap icon logo plus tail wind color -->
+         <div class="text-blue-700">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <i class="text-rose-600 fa-brands fa-instagram"></i>
+            <i class="text-teal-400 fa-brands fa-whatsapp"></i>
+         </div>
+     </div>  
+</body>
+</html>
